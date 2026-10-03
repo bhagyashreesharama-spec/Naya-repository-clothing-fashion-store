@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIRÉ — Modern Fashion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    Complimentary shipping on orders above ₹2,500
+</div>
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        <span class="logo-mark">N</span>
+        <span>NOIRÉ</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#new">New Arrivals</a>
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button id="searchBtn" class="icon-btn" aria-label="Search">
+            ⌕
+        </button>
+
+        <button id="wishlistBtn" class="icon-btn" aria-label="Wishlist">
+            ♡
+            <span id="wishlistCount">0</span>
+        </button>
+
+        <button id="cartBtn" class="icon-btn" aria-label="Cart">
+            🛍
+            <span id="cartCount">0</span>
+        </button>
+
+        <button id="menuBtn" class="menu-btn">☰</button>
+
+    </div>
+
+</header>
+
+
+<!-- SEARCH -->
+<div id="searchPanel" class="search-panel">
+
+    <div class="search-inner">
+
+        <span>⌕</span>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search dresses, shirts, accessories..."
+        >
+
+        <button id="closeSearch">×</button>
+
+    </div>
+
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">THE AUTUMN EDIT · 2026</p>
+
+        <h1>
+            Dress like
+            <span>yourself.</span>
+        </h1>
+
+        <p class="hero-text">
+            Contemporary essentials designed for people
+            who don't follow the usual rules.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#shop" class="primary-btn">
+                Explore Collection
+            </a>
+
+            <a href="#new" class="text-btn">
+                New arrivals →
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- CSS FASHION ILLUSTRATION -->
+    <div class="hero-art">
+
+        <div class="art-circle"></div>
+
+        <div class="fashion-person">
+
+            <div class="head">
+                <div class="hair"></div>
+            </div>
+
+            <div class="neck"></div>
+
+            <div class="body">
+
+                <div class="shirt"></div>
+
+                <div class="arm arm-left"></div>
+                <div class="arm arm-right"></div>
+
+            </div>
+
+            <div class="waist"></div>
+
+            <div class="legs">
+                <div class="leg leg-left"></div>
+                <div class="leg leg-right"></div>
+            </div>
+
+            <div class="shoe shoe-left"></div>
+            <div class="shoe shoe-right"></div>
+
+        </div>
+
+        <div class="floating-card">
+            <small>LOOK 01</small>
+            <strong>Quiet<br>Confidence</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MARQUEE -->
+<div class="marquee">
+    <div>
+        MODERN · MINIMAL · TIMELESS · NOIRÉ · MODERN · MINIMAL · TIMELESS · NOIRÉ ·
+    </div>
+</div>
+
+
+<!-- NEW ARRIVALS -->
+<section class="section" id="new">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">JUST DROPPED</p>
+            <h2>New Arrivals</h2>
+        </div>
+
+        <button class="outline-btn" id="viewAllBtn">
+            View all
+        </button>
+
+    </div>
+
+
+    <div class="products-grid" id="productGrid">
+
+        <!-- PRODUCT 1 -->
+        <article
+            class="product-card"
+            data-category="women"
+            data-name="Sculpted Black Dress"
+        >
+
+            <div class="product-visual visual-dress">
+
+                <span class="product-tag">NEW</span>
+
+                <button class="heart-btn">♡</button>
+
+                <div class="dress-model">
+
+                    <div class="model-head"></div>
+
+                    <div class="dress-body">
+                        <div class="dress-belt"></div>
+                    </div>
+
+                    <div class="model-leg left"></div>
+                    <div class="model-leg right"></div>
+
+                </div>
+
+                <button class="quick-btn">Quick View</button>
+
+            </div>
+
+            <div class="product-info">
+                <div>
+                    <h3>Sculpted Black Dress</h3>
+                    <p>Structured Collection</p>
+                </div>
+
+                <strong>₹2,899</strong>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article
+            class="product-card"
+            data-category="men"
+            data-name="Relaxed Overshirt"
+        >
+
+            <div class="product-visual visual-shirt">
+
+                <button class="heart-btn">♡</button>
+
+                <div class="shirt-model">
+
+                    <div class="shirt-head"></div>
+
+                    <div class="overshirt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="shirt-leg left"></div>
+                    <div class="shirt-leg right"></div>
+
+                </div>
+
+                <button class="quick-btn">Quick View</button>
+
+            </div>
+
+            <div class="product-info">
+                <div>
+                    <h3>Relaxed Overshirt</h3>
+                    <p>Everyday Tailoring</p>
+                </div>
+
+                <strong>₹2,499</strong>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article
+            class="product-card"
+            data-category="women"
+            data-name="Satin Slip Dress"
+        >
+
+            <div class="product-visual visual-satin">
+
+                <span class="product-tag">BESTSELLER</span>
+
+                <button class="heart-btn">♡</button>
+
+                <div class="satin-dress">
+
+                    <div class="satin-head"></div>
+
+                    <div class="satin-body">
+                        <div class="strap strap-one"></div>
+                        <div class="strap strap-two"></div>
+                    </div>
+
+                    <div class="satin-leg"></div>
+
+                </div>
+
+                <button class="quick-btn">Quick View</button>
+
+            </div>
+
+            <div class="product-info">
+                <div>
+                    <h3>Satin Slip Dress</h3>
+                    <p>After Dark Collection</p>
+                </div>
+
+                <strong>₹3,199</strong>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+        <article
+            class="product-card"
+            data-category="men"
+            data-name="Minimal Polo"
+        >
+
+            <div class="product-visual visual-polo">
+
+                <button class="heart-btn">♡</button>
+
+                <div class="polo-model">
+
+                    <div class="polo-head"></div>
+
+                    <div class="polo-body">
+
+                        <div class="polo-collar"></div>
+
+                        <div class="polo-buttons">
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                    </div>
+
+                    <div class="polo-leg left"></div>
+                    <div class="polo-leg right"></div>
+
+                </div>
+
+                <button class="quick-btn">Quick View</button>
+
+            </div>
+
+            <div class="product-info">
+                <div>
+                    <h3>Minimal Polo</h3>
+                    <p>Essential Line</p>
+                </div>
+
+                <strong>₹1,799</strong>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+        <article
+            class="product-card"
+            data-category="accessories"
+            data-name="Structured Handbag"
+        >
+
+            <div class="product-visual visual-bag">
+
+                <button class="heart-btn">♡</button>
+
+                <div class="bag-shape">
+                    <div class="bag-handle"></div>
+                    <div class="bag-lock">N</div>
+                </div>
+
+                <button class="quick-btn">Quick View</button>
+
+            </div>
+
+            <div class="product-info">
+                <div>
+                    <h3>Structured Handbag</h3>
+                    <p>Leather Edit</p>
+                </div>
+
+                <strong>₹2,299</strong>
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+        <article
+            class="product-card"
+            data-category="accessories"
+            data-name="Statement Sunglasses"
+        >
+
+            <div class="product-visual visual-glasses">
+
+                <span class="product-tag">TRENDING</span>
+
+                <button class="heart-btn">♡</button>
+
+                <div class="glasses">
+                    <div class="lens"></div>
+                    <div class="bridge"></div>
+                    <div class="lens"></div>
+                </div>
+
+                <button class="quick-btn">Quick View</button>
+
+            </div>
+
+            <div class="product-info">
+                <div>
+                    <h3>Statement Sunglasses</h3>
+                    <p>Accessories</p>
+                </div>
+
+                <strong>₹1,299</strong>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- FILTER -->
+<section class="shop-section" id="shop">
+
+    <div class="shop-intro">
+
+        <div>
+            <p class="eyebrow">SHOP NOIRÉ</p>
+            <h2>Find your<br><span>signature.</span></h2>
+        </div>
+
+        <p>
+            Pieces made to move with you —
+            from slow mornings to late nights.
+        </p>
+
+    </div>
+
+
+    <div class="filter-bar">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="women">
+            Women
+        </button>
+
+        <button class="filter" data-filter="men">
+            Men
+        </button>
+
+        <button class="filter" data-filter="accessories">
+            Accessories
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTIONS -->
+<section class="collections" id="collections">
+
+    <div class="collection collection-dark">
+
+        <div class="collection-content">
+
+            <p class="eyebrow">01 / THE EDIT</p>
+
+            <h2>Everyday<br>Essential</h2>
+
+            <p>
+                Clean silhouettes. Easy layers.
+                Nothing unnecessary.
+            </p>
+
+            <button class="light-btn">
+                Discover Edit →
+            </button>
+
+        </div>
+
+        <div class="collection-art">
+
+            <div class="coat">
+                <div class="coat-collar"></div>
+                <div class="coat-button one"></div>
+                <div class="coat-button two"></div>
+                <div class="coat-button three"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="collection collection-light">
+
+        <div class="collection-content">
+
+            <p class="eyebrow">02 / THE EDIT</p>
+
+            <h2>After<br>Dark</h2>
+
+            <p>
+                Elevated pieces for nights
+                worth remembering.
+            </p>
+
+            <button class="dark-btn">
+                Explore Night →
+            </button>
+
+        </div>
+
+        <div class="collection-art">
+
+            <div class="evening-dress">
+
+                <div class="evening-head"></div>
+
+                <div class="evening-body"></div>
+
+                <div class="evening-leg"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-art">
+
+        <div class="about-circle"></div>
+
+        <div class="about-shape">
+
+            <div class="about-neck"></div>
+            <div class="about-body"></div>
+            <div class="about-arm"></div>
+
+        </div>
+
+        <span class="about-number">N°01</span>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>
+            Less noise.<br>
+            <span>More you.</span>
+        </h2>
+
+        <p>
+            NOIRÉ is built around one simple idea:
+            clothes should support your identity,
+            not replace it.
+        </p>
+
+        <p>
+            We create considered silhouettes,
+            versatile essentials and statement pieces
+            that live beyond a single season.
+        </p>
+
+        <a href="#contact" class="text-btn">
+            More about NOIRÉ →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <div>
+        <p class="eyebrow">STAY IN THE LOOP</p>
+
+        <h2>
+            Your inbox,<br>
+            <span>better dressed.</span>
+        </h2>
+    </div>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your email address"
+            required
+        >
+
+        <button type="submit">
+            Subscribe →
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div>
+
+        <p class="eyebrow">GET IN TOUCH</p>
+
+        <h2>Let's talk<br><span>fashion.</span></h2>
+
+    </div>
+
+    <div class="contact-details">
+
+        <p>hello@noirefashion.com</p>
+        <p>+91 98765 43210</p>
+        <p>New Delhi · India</p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+                <span class="logo-mark">N</span>
+                <span>NOIRÉ</span>
+            </div>
+
+            <p>
+                Contemporary fashion for
+                independent minds.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+                <strong>Shop</strong>
+                <a href="#new">New Arrivals</a>
+                <a href="#shop">Women</a>
+                <a href="#shop">Men</a>
+                <a href="#shop">Accessories</a>
+            </div>
+
+            <div>
+                <strong>Help</strong>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div>
+                <strong>Social</strong>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Facebook</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <span>© 2026 NOIRÉ. All rights reserved.</span>
+        <span>Made with code & creativity.</span>
+    </div>
+
+</footer>
+
+
+<!-- CART DRAWER -->
+<div id="overlay" class="overlay"></div>
+
+<aside id="cartDrawer" class="cart-drawer">
+
+    <div class="drawer-head">
+
+        <h2>Your Bag</h2>
+
+        <button id="closeCart">×</button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items">
+
+        <div class="empty-cart">
+            Your bag is currently empty.
+        </div>
+
+    </div>
+
+    <div class="cart-bottom">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- QUICK VIEW -->
+<div id="quickModal" class="modal">
+
+    <div class="modal-box">
+
+        <button id="closeModal" class="modal-close">
+            ×
+        </button>
+
+        <div class="modal-visual" id="modalVisual">
+        </div>
+
+        <div class="modal-info">
+
+            <p class="eyebrow">NOIRÉ COLLECTION</p>
+
+            <h2 id="modalTitle">
+                Product
+            </h2>
+
+            <p id="modalDescription">
+                Carefully designed for modern wardrobes.
+            </p>
+
+            <strong id="modalPrice">
+                ₹0
+            </strong>
+
+            <button id="modalAdd" class="primary-btn">
+                Add to Bag
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
+<div id="toast" class="toast">
+    Added to your bag.
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
